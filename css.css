@@ -36,16 +36,11 @@ html{
     }
 }
 body {
-    font-family: "raleway",sans-serif;
-    font-size: 1.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
     color: lavender;
-}
-h1, h2 {
-    font-family: "raleway", sans-serif;
-    font-weight: 700;
-    text-align: center;
 }
 h1{
     font-size: 6rem;
@@ -72,13 +67,13 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background: #387373;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background: #151419;
     z-index: 10;
 }
 .nav-list{
     display: flex;
     margin-right: 2rem;
+    font-size: 1rem;
 }
 @media (max-width: 28.75rem) {
     .nav{
@@ -90,7 +85,7 @@ img {
 }
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 2rem;
 }
 .nav-list a:hover{
@@ -103,26 +98,71 @@ img {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #000000;
-    background-image: linear-gradient(62deg #3a3d40 0% #181719 100%);
+    background-image: url(Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 01%;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
 }
-.welcome-section > p{
-    font-size: 3rem;
-    font-weight: 200;
-    font-style: italic;
-    color: #843532;
+.welcome-section::before{
+    content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.7);
+}
+.welcome-section > p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #D1002B;
+    position: relative;
+
+}
+.welcome-section > h1 {
+    position: relative;
+    font-size: 6rem;
+    font-weight: lighter;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #e5e8ec;
+    letter-spacing: normal;
 }
 /*about me section */
 .aboutMe-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: #2c2e2d;
+    background: #151419;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.me{
+    width: 250px;
+    height: 250px;
+}
+.aboutMe-section > p {
+    background: #212126;
+    padding: 80px 80px 10px 80px;
+    height: 500px;
+    width: 450px;
+    box-sizing: content-box;
+    text-align: left;
+    font-size: 1.7rem;
+    color: #bfc6ce;
+}
+.aboutMe-section > h1 {
+    font-size: 30px;
 }
 /* Projects section */
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: cyan;
+    background: #212126;
 }
 .projects-section-header{
     max-width: 640px;
@@ -239,7 +279,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: #ff5434;
+    background: #212126;
     border-top: 4px solid var(--main-grey);
 }
 footer> p{
