@@ -113,56 +113,67 @@ img {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.8);
 }
 .welcome-section > p {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #D1002B;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #e5e8ec;
     position: relative;
+    
+    
 
 }
 .welcome-section > h1 {
     position: relative;
-    font-size: 6rem;
-    font-weight: lighter;
+    font-size: 6.5rem;
+    font-weight: 350;
     font-family: 'Quicksand', sans-serif;
     color: #e5e8ec;
     letter-spacing: normal;
+    word-spacing: 8px;
 }
 /*about me section */
 .aboutMe-section {
-    text-align: center;
-    padding: 10rem 2rem;
+    padding: 8rem ;
     background: #151419;
     display: grid;
-    grid-template-columns: repeat(auto, auto);
-    grid-gap: 10px;
-    grid-template-rows: repeat(auto, auto);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    grid-template-columns: 10% auto auto 2rem;
+    display: flexbox;
+    align-items: center;
 
 }
 .me{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 2;
 }
 .aboutMe-section > p {
     background: #212126;
-    padding: 80px 80px 10px 80px;
-    height: 500px;
-    width: 450px;
+    border-radius: 3px;
+    padding: 80px;
+    height: 450px;
+    width: 500px;
     box-sizing: content-box;
     text-align: left;
     font-size: 1.7rem;
-    color: #bfc6ce;
-    grid-column: 2;
+    font-weight: 390;
+    line-height: 28px;
+    color: #e5e8ec;
+    grid-column: 3;
     grid-row: 2;
 }
 .aboutMe-section > h1 {
-    font-size: 30px;
-    grid-column: 1;
+    font-size: 38px;
+    font-weight: 400;
+    color: #D1002B;
+    grid-column: 3;
     grid-row: 1;
+
 
 }
 /* Projects section */
@@ -173,35 +184,39 @@ img {
 }
 .projects-section-header{
     max-width: 640px;
-    margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-bluedark);
+    margin: 0 auto 3rem auto;
+    color: #D1002B;
+    font-size: 38px;
+    font-weight: 400;
+
 }
 @media(max-width: 2828.75em) {
     .projects-section-header {
-        font-size: 4rem;
+        font-size: 38px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #d1002b;
+        grid-row: 1;
+        grid-column: 1;
+        
     }
 }
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-gap: 10px;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 6rem;
 }
+
+
 @media (max-width: 30.625em){
     .projects-section
     padding: 6rem 1rem;
 }
-.projects-grid{
-    grid-template-columns: 1fr;
-}
-.project{
-    background: ;
-    box-shadow: ;
-    border-radius: ;
-}
+
 .code {
     color: var(--main-grey);
     transition: color 0.3s ease-out;
@@ -210,13 +225,16 @@ img {
     color: #ff5434;
 }
 .project-image{
-    height: calc(100%- 6.8rem);
-    width: 100%;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
+    border-radius: 3px;
 }
 .project-title{
-    font-size: 2rem;
-    padding: 2rem 0.5rem;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 400;
+    
 }
 .btn {
     display: inline-block;
@@ -249,7 +267,13 @@ img {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-black);
+    background-image: url(Glacia5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 20%;
+}
+.contact-section::before{
+    color: rgba(0,0,0,0.8);
 }
 .contact-section-header > h2 {
     font-size: 6rem;
